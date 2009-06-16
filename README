@@ -1,0 +1,40 @@
+
+INSTALL 
+
+ 1) 
+ 2) 
+ 3)
+ 4) 
+
+SAMPLE APACHE CONFIG
+
+ <VirtualHost *>
+        ServerName local.handgranat.org
+        DocumentRoot /var/www/wiki
+        # plz lat sta :3
+        ErrorLog /var/log/httpd/handgranat-error.log
+        CustomLog /var/log/httpd/handgranat-access.log combined
+        Options All ExecCGI
+        AddHandler cgi-script .cgi .pl
+        AddType application/ogg .ogg
+        AddType application/rdf+xml .rdf
+        AddType application/x-bittorrent .torrent
+        AddCharset ISO-8859-1 .html
+        DirectoryIndex index.html wiki.pl
+        RewriteEngine On
+        RewriteLog /var/log/httpd/handgranat-rewrite.log
+        RewriteLogLevel 0
+        RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteCond %{REQUEST_FILENAME} !.*nowiki.*
+        RewriteRule ^/(.+) /wiki.pl?$1
+ </VirtualHost>
+    
+<Directory /var/www/wiki>
+ Options all
+</Directory>
+    
+
+TODO
+
+ * Complete translation to english 
+ 
