@@ -8,6 +8,8 @@ INSTALL
 
 SAMPLE APACHE CONFIG
 
+Remember to add correct path, also for ErrorLog, CustomLog and RewriteLog - otherwise apache will fail to restart!
+
  <VirtualHost *>
         ServerName local.handgranat.org
         DocumentRoot /var/www/wiki
