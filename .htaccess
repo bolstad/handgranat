@@ -1,0 +1,22 @@
+AddType application/ogg .ogg
+AddType application/rdf+xml .rdf
+AddType application/x-bittorrent .torrent
+AddCharset ISO-8859-1 .html
+
+DirectoryIndex index.html wiki.pl
+
+### REWRITE RULES GOES HERE ###
+RewriteEngine On
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !.*nowiki.*
+RewriteRule ^(.+) /wiki.pl?$1
+#RewriteRule ^(.+) /index.html
+
+
+order allow,deny
+deny from 78.129.
+allow from all
+
+
