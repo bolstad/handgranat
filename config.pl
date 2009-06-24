@@ -19,4 +19,4 @@ $use_database = 0;
 $mysql_host = "localhost";
 $mysql_db = "handgranat"; 
 $mysql_user = "handgranat"; 
-$mysql_pass = "asdassss";
+$mysql_pass = "mypassword";
