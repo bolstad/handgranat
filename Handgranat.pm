@@ -2670,6 +2670,10 @@ sub LastMinuteFixes {
     s/class="jbo"/lang="jbo"/g
       ; # hgr2 will have more languages, feel free to add languages here for now.
     s/class="it"/lang="it"/g;
+    s/class="it"/lang="dk"/g;
+    s/class="it"/lang="de"/g;
+    s/class="it"/lang="no"/g;
+    s/class="it"/lang="fi"/g;
     s/class="sv"/lang="sv"/g;
     s/class="fr"/lang="fr"/g;
     s/class="en"/lang="en"/g;
