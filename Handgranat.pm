@@ -855,6 +855,7 @@ sub BrowsePage {
                             $atomtitel = "utan titel, $date";
                         }
                         $subentry =~ s/^[:=].*$//gm;
+                        $subentry =~ s/^Se även .*$//gm;
                         $subentry =~ s/\(\:[^)]*\)//g;
                         $subentry = &WikiToHTML($subentry);
                         $subentry =
@@ -2368,8 +2369,8 @@ sub Taggar {
 
 sub SeAven {
     my $taggar = $_;
-    $taggar =~ s/Se även//i;
-    my $r = '<div class="karras">Se &auml;ven ';
+    $taggar =~ s/^Se även//i;
+    my $r = '<div class="karras">Se även ';
     my @ord = split( ' ', $taggar );
     foreach (@ord) {
         my $data = $_;
@@ -2406,7 +2407,7 @@ sub SparaSeAven {
         my $taggar = $_[1];
 
         $taggar =~ s/Se även//i;
-        my $r = 'Se &auml;ven ';
+        my $r = 'Se även ';
         my @ord = split( ' ', $taggar );
         foreach (@ord) {
             my $data = $_;
@@ -5120,7 +5121,7 @@ sub DoPost {
     my $summa = $tal1 + $tal2;
     if ( $summa ne $svar ) {
         &ReportError(
-"spamskyddet p&aring;st&aring;r att $tal1 + $tal2 = $summa, din &auml;ndring blev inte sparad"
+"Älskling, testa att skriva $summa istället för vad du nu trodde att  $tal1 + $tal2 blev, puss puss!"
         );
         return;
 
