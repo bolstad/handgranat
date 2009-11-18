@@ -147,6 +147,7 @@ $RssDays    = 7;        #- Default number of days in RSS feed
 $StartUID   = 1001;     #- Starting number for user IDs
 @ImageSites = qw ();    #- Url prefixes of good image sites: ()=all
                         # ^^ is this one needed ? --Kers 080817
+# no, we trust all! welcome goatse! let's remove it
 
 # Major options:
 $UseSubpage  = 1;       #- 1 = use subpages,       0 = do not use subpages
