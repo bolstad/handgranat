@@ -1,0 +1,260 @@
+/*
+
+== Handgranats CSS-riktlinjer: == 
+# Inte Verdana. Font-family brukar fucka upp på andra plattformar än ens egen.
+# Läsbarhet går före snygghet.
+# Användbarhet går före snygghet.
+# Ändra inte font-storleken. %{shouting}använd aldrig font-size!%
+# Sätt helst inte värden i px.
+# Om du anger color ange alltid background också, och tvärtom
+
+*/
+
+img, .icon {
+  border: none;
+}
+
+.heart, .tune { 
+  color: #b0381e;
+  background: transparent;
+}
+
+strong { color: #b0381e; background: transparent;}
+b { color: #b0381e; background: transparent;}
+
+/*
+.arrrow-left, .arrow-right { 
+  margin: 1x;
+}
+*/
+
+body {
+  margin-left: 15%;
+  margin-right: 10%;
+  color: black;
+  background: white;
+  background-image: URL(bilder/white-solid-lace.png);
+  background-position: top left;
+  background-repeat: repeat-y;
+  font-style: normal;
+}
+
+dd {
+  font-weight: normal;
+}
+
+dt {
+  font-weight: bold;
+}
+
+p.verse {
+  white-space: pre;
+}
+
+.header, .contbox, .changes {
+  border-bottom: thin #b0381e dashed;
+/* FY FAN VAD SNYGGT MED DENNA BORDER DEN KJGA --BLÄMBLA */
+  color: inherit;
+  background: transparent;
+}
+
+.header ul, .footer ul {
+  padding: 0px;
+}
+
+.header li, .footer li {
+  margin-right: 0.5em; margin-left: 0.5em;
+}
+
+
+div.header {
+  text-align: center;
+  padding: 1em;
+}
+
+div.footer {
+  text-align: center;
+  padding: 1em;
+}
+
+div.content { /*inget*/}
+
+div.contbox {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+
+div.changes {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+
+a {
+  color: #b0381e;
+  background: transparent;
+}
+
+a:visited {
+  color: black;
+  background: transparent;
+  text-decoration: underline;
+
+}
+
+.comment cite, em cite, .comment em, i cite, i em, .comment i {
+  font-style: normal;
+}
+
+.comment {
+  list-style: none;
+  font-style: italic;
+}
+
+h1, h2, h3, h4, h5 {
+  text-align: center;
+  color: #b0381e;
+  background: transparent;
+  clear: both;
+}
+
+.inline-parent li, .inline {
+  display: inline;
+}
+
+div.footer  {
+  font-size: small;
+}
+.entrydate {
+  font-size: 1em;
+}
+
+.inline-parent li, .inline, .endlinks li{
+  margin-right: 1em;
+}
+
+.endlinks {
+  font-size: small;
+  text-align: center;
+}
+
+.endlinks li {
+  display: inline;
+}
+
+ins {
+/* Kommer inte på något bra sätt att utmärka ins på, men understruket blir inte bra. */
+  text-decoration: none;
+}
+
+del, .deleted {
+  color: #b0b0b0;
+  background: transparent;
+  text-decoration: line-through;
+}
+
+.badge {
+  font-weight: bold;
+  border: 1em #b0381e solid;
+  border-bottom: 1em black solid;
+  border-right: 1em black solid;
+  padding: 0.3em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.bin {
+  font-family: monospace;
+}
+  div ul.commentlist li.comment {
+  margin-bottom: 0.5em;
+}
+
+.wikidiffold {
+  color: black;
+  background: #ffffaf;
+}
+
+.wikidiffnew {
+  color: black;
+  background: #cfffcf;
+}
+
+a.xml-link, a.xml-link:visited {
+ border-top: thin #ffc8a4 solid;
+ border-right: thin #7d3302 solid;
+ border-bottom: thin #3f1a01 solid;
+ border-left: thin #ff9a57 solid;
+ text-decoration: none;
+ background: #ff6600;
+ color: white;
+ font-weight: bold;
+ font-family: sans-serif;
+ font-size: smaller;
+ margin-left: 0.6em;
+}
+
+.note {
+ font-size: smaller;
+}
+
+.kindb {
+ text-transform: uppercase;
+}
+
+.byline {
+  font-size: smaller;
+}
+
+.shouting {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.shouting kbd {
+  text-transform: none;
+/* Eller? */
+}
+
+
+.shouting:after {
+  content: "!!!!11111!!!!!!111!";
+}
+
+.location {
+
+}
+
+.unchecked {
+list-style-type: circle;
+}
+
+li.bokstavslista {
+  list-style-type: lower-alpha;
+}
+
+.mars { color: #b0381e; background: white;}
+
+table.chess { font-size: 1.8em; color: black;}
+table.chess td { border: none; margin: 0px; height: 1em; width: 1em;}
+table.chess td.dark { background-color: #b0381e; }
+table.chess tr { margin: 0px; padding: 0px;}
+/* lite hjälp tack?!?!? gör rutorna fyrkantiga & snygga */
+
+.skenbar-orimlighet {
+  border: thin #b0381e dashed;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.lingex {
+  font-style: italic;
+}
+
+.karamell {
+}
+
+.fnord {
+  display: none; 
+}
