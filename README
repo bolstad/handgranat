@@ -12,29 +12,30 @@ Remember to add correct path, also for ErrorLog, CustomLog and RewriteLog - othe
 
  <VirtualHost *>
         ServerName local.handgranat.org
-        DocumentRoot /var/www/wiki
+        DocumentRoot /var/www/handgranat
         # plz lat sta :3
-        ErrorLog /var/log/httpd/handgranat-error.log
-        CustomLog /var/log/httpd/handgranat-access.log combined
+        ErrorLog /home/wiki/logs/wiki-error.log
+        CustomLog /home/wiki/logs/wiki-access.log combined
         Options All ExecCGI
         AddHandler cgi-script .cgi .pl
         AddType application/ogg .ogg
         AddType application/rdf+xml .rdf
         AddType application/x-bittorrent .torrent
         AddCharset ISO-8859-1 .html
-        DirectoryIndex index.html wiki.pl
+        DirectoryIndex wiki.pl
         RewriteEngine On
-        RewriteLog /var/log/httpd/handgranat-rewrite.log
+        RewriteLog /home/wiki/logs/handgranat-rewrite.log
         RewriteLogLevel 0
         RewriteCond %{REQUEST_FILENAME} !-f
         RewriteCond %{REQUEST_FILENAME} !.*nowiki.*
+        RewriteCond %{REQUEST_FILENAME} !.*wiki.pl*
         RewriteRule ^/(.+) /wiki.pl?$1
  </VirtualHost>
-    
-<Directory /var/www/wiki>
+
+<Directory /var/www/handgranat>
  Options all
 </Directory>
-    
+
 
 TODO
 
