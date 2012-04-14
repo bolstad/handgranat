@@ -209,8 +209,8 @@ $EditNameLink = 0;    # 1 = edit links use name (CSS), 0 = '?' links
 $UseMetaWiki  = 0;    # 1 = add MetaWiki search links, 0 = no MW links
 $BracketImg   = 1;    # 1 = [url url.gif] becomes image link, 0 = no img
 
-do "/home/handgranat/blendas_huvud/translation.pl";
-do "translation.pl";
+#do "/home/handgranat/blendas_huvud/translation.pl";
+#do "translation.pl";
 
 $WeekNo = int( ( localtime( time() ) )[7] / 7 ) + 2;
 
